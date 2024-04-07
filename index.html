@@ -1,32 +1,153 @@
-  <!-- TO RUN IN BROWSER:
+<!-- TO RUN IN BROWSER:
     1. Install vscode extension Name: open in `browser open-in-browser` by TechER
     2. Right click html file and either run in default browser or another browser
   -->
-
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML/CSS Studio</title>
+    <title>Development Report</title>
     <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <!-- page content goes into <body> -->
   <body>
     <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
+      <h1>Development Assignment!</h1>
+      <h3>:D</h3>
     </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
+    <hr />
+    <div id="Overview">
+      <h1>Overview</h1>
+      <p>
+        I love music, and I love the different ways different music platforms have different favoriting functions, or different ways to add songs to playlists. 
+        I was told to create a webpage that had favoriting, filtering, and
+        sorting features and so i did just that
+      </p>
+      <p>
+        <a href="https://www.menominee-nsn.gov/">here!</a>
+        and the link to the redesigned website can be found
+        <a href="https://sydneymeza.github.io/ResponsiveRedesign/">here!</a>
+      </p>
+    </div>
+    <div id="part1">
+      <h1>Competitive Comparison</h1>
+      <p>
+        To begin, I first looked at three other sites, and from these sites i
+        evaluted what functions each one had and how it could add to the user
+        experience. Below is the comparison chart I made from them.
+      </p>
+      <div class="photos">
+        <img
+          alt="image of the Menominee website in the full desktop screen only contrast and some other design choices look off"
+          src="./assets/site.jpg"
+        />
+      </div>
+      <p>
+        From this I decided to choose these features to filter my chosen thing
+        for. One of the functions I wanted to attempt to is the button changing
+        icons depending on if the item was favorited. I also really liked how
+        with multiple filtering options that if one filter was changed the
+        website would also filter using the other chosen filter as well.
+      </p>
+      <div class="photos">
+        <img
+          alt="image of the Menominee website this time the browser window shrunken so that test is overlapping the whole navbar cannot be accessed"
+          src="./assets/not_responsive_sc.jpg"
+        />
+      </div>
+      <p>
+        Since I decided I wanted to do a webiste with songs and favoritng songs.
+      </p>
+    </div>
+    <div id="part2">
+      <h1>Planning</h1>
+      <h2>Lofi Sketches</h2>
+      <p>
+        I first created these lofi sketches to see what layout I liked best, or
+        if there was a different way to create a list of things
+      </p>
+      <div class="photos">
+        <img
+          alt="image of a regular white paper that has been folded into 9 squares. It has a different sketch in red pen on each square, some designs are more similar to each other than others."
+          src="./assets/nine_sketches.jpg"
+        />
+        <img
+          alt="image of a handdrawn final sketch. It is messy but a more well thought out idea than the sketches"
+          src="./assets/final_sketch.jpg"
+        />
+      </div>
+      <h2>Style Guide</h2>
+      <p>
+        After having a decent sketch I then created a style guide for the
+        webiste
+      </p>
+      <div class="photos">
+        <img
+          alt="image of a handdrawn desktop wireframe. It is a bit messy but the idea is able to be understood."
+          src="./assets/desktop_wireframe.jpg"
+        />
+        <img
+          alt="image of a handdrawn tablet wireframe. It is a bit messy but the idea is able to be understood."
+          src="./assets/tablet_wireframe.jpg"
+        />
+        <img
+          alt="image of a handdrawn phone wireframe. It is a bit messy but the idea is able to be understood."
+          src="./assets/phone_wireframe.jpg"
+        />
+      </div>
+      <h2>Hi-fi Prototype</h2>
+      <p>From there I created a Hi-fi prototype in Figma.</p>
+      <div class="photos">
+        <img
+          alt="a screenshot of a Figma frame. There are 6 colors, all various shades of green and blue. There are multiple iterations of buttons, how text should look, and how certain dropdown menu's/navbars would look."
+          src="./assets/style_guide.jpg"
+        />
+      </div>
+      <p>this is what it looks like.</p>
+      <div class="photos">
+        <img
+          alt="screenshot of figma prototype of a laptop there is a high fidelity screen that is a mockup of what the webiste should have looked like."
+          src="./assets/laptop_mockup.jpg"
+        />
+        <img
+          alt="screenshot of figma prototype of a tablet there is a high fidelity screen that is a mockup of what the webiste should have looked like."
+          src="./assets/tablet_mockup.jpg"
+        />
+        <img
+          alt="screenshot of figma prototype of a phone there is a high fidelity screen that is a mockup of what the webiste should have looked like."
+          src="./assets/phone_mockup.jpg"
+        />
+      </div>
+    </div>
+    <div id="part3">
+      <h1>React</h1>
+      <p>
+        While I do feel more comfortable using HTML and CSS, adding react was a bit difficult. I have a grasp on how to use react, but using some react elements like the dropdowns, made it a bit more difficult for me to use CSS with them. From this experience I do want to learn more about CSS and make it so that I can customize just about any part of a website that uses react. 
+      </p>
+      <div class="photos">
+        <img
+          src="./assets/redesign_sc.jpg"
+          alt="screenshot of the redesigned page!"
+        />
+      </div>
+
+      <p>
+        Because I wanted to have users make a playlist, I added two filters. One would filter the songs by artist, and the other would filter the songs by genre. Since most people have a favorite artist, or seem to know what kind of artists they like, and the same can be said for the genre of songs, this felt the most natural way to filter song choices.
+      </p>
+
+      <p>I chose a variety of sorting options. I chose A-Z/Z-A for title and artist, and then I also chose to sort by song length. Chosing A-Z/Z-A for title and artist felt most intuitve for me since many other music platforms have that feature, and I added in the sorting by length so that if a person want to have a decently short playlist they could choose songs that best fit that requirement. </p>
+    </div>
+    <div>
+      <h1>Conclustion</h1>
+      <p>
+        I feel like I learned a lot from this project. I was able to get a lot
+        of practice using react, and I was also able to practice my CSS skills. I'm still not quite satisfied at my skill level with CSS or react, and I hope to become more proficient at using them with smaller projects. 
+        Again, to start making playlists go to this website 
+        <a href="https://sydneymeza.github.io/ResponsiveRedesign/">here!</a>
+      </p>
     </div>
   </body>
-
 </html>
